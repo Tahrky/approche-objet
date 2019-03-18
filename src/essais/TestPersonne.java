@@ -9,9 +9,11 @@ public class TestPersonne
 	{
 		AdressePostale adresse1 = new AdressePostale (5, "Rue des lilas", 84000, "Avignon");
 		
-		Personne personne1 = new Personne ("Bouloulou", "Lilian", adresse1);
+		Personne personne1 = new Personne ("Bouloulou", "Lilian");
+		personne1.setAdressePostale(adresse1);
 		
-		Personne personne2 = new Personne ("Bouloulou", "Anabelle", adresse1);			
+		Personne personne2 = new Personne ("Bouloulou", "Anabelle");			
+		personne2.setAdressePostale(adresse1);
 	}
 
 }
