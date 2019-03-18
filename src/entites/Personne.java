@@ -13,7 +13,7 @@ public class Personne
 	
 	public Personne (String nom, String prenom)
 	{
-		this.nom = nom;
+		setNom (nom);
 		this.prenom = prenom;
 	}
 	
@@ -25,7 +25,7 @@ public class Personne
 	
 	public void setNom (String nom)
 	{
-		this.nom = nom;
+		this.nom = nom.toUpperCase();
 	}
 	
 	public String getNom ()
@@ -54,3 +54,5 @@ public class Personne
 	}
 	
 }
+
+
