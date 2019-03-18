@@ -4,7 +4,14 @@ import entites.AdressePostale;
 
 public class Personne 
 {
-	public String nom;
-	public String prenom;
-	public AdressePostale adressePostale;
+	private String nom;
+	private String prenom;
+	private AdressePostale adressePostale;
+	
+	public Personne (String _nom, String _prenom, AdressePostale _adressePostale)
+	{
+		nom = _nom;
+		prenom = _prenom;
+		adressePostale = _adressePostale;
+	}
 }
