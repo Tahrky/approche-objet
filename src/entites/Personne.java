@@ -11,22 +11,21 @@ public class Personne
 	public Personne ()
 	{}
 	
-	public Personne (String _nom, String _prenom)
+	public Personne (String nom, String prenom)
 	{
-		nom = _nom;
-		prenom = _prenom;
+		this.nom = nom;
+		this.prenom = prenom;
 	}
 	
-	public Personne (String _nom, String _prenom, AdressePostale _adressePostale)
+	public Personne (String nom, String prenom, AdressePostale adressePostale)
 	{
-		nom = _nom;
-		prenom = _prenom;
-		adressePostale = _adressePostale;
+		this(nom, prenom);
+		this.adressePostale = adressePostale;
 	}
 	
-	public void setNom (String _nom)
+	public void setNom (String nom)
 	{
-		nom = _nom;
+		this.nom = nom;
 	}
 	
 	public String getNom ()
@@ -34,9 +33,9 @@ public class Personne
 		return nom;
 	}
 	
-	public void setPrenom (String _prenom)
+	public void setPrenom (String prenom)
 	{
-		prenom = _prenom;
+		this.prenom = prenom;
 	}
 	
 	public String getPrenom ()
@@ -44,9 +43,9 @@ public class Personne
 		return prenom;
 	}
 	
-	public void setAdressePostale (AdressePostale _adressePostale)
+	public void setAdressePostale (AdressePostale adressePostale)
 	{
-		adressePostale = _adressePostale;
+		this.adressePostale = adressePostale;
 	}
 	
 	public AdressePostale getAdressePostale ()

@@ -7,11 +7,11 @@ public class AdressePostale
 	private int codePostal;
 	private String ville;
 	
-	public AdressePostale (int _numero, String _typeVoie, int _codePostal, String _ville)
+	public AdressePostale (int numero, String typeVoie, int codePostal, String ville)
 	{
-		numero = _numero;
-		typeVoie = _typeVoie;
-		codePostal = _codePostal;
-		ville = _ville;
+		this.numero = numero;
+		this.typeVoie = typeVoie;
+		this.codePostal = codePostal;
+		this.ville = ville;
 	}
 }
