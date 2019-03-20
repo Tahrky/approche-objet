@@ -73,32 +73,14 @@ public class Pays implements Comparable<Pays>
 		
 		afficher (listP);
 		
-		Collections.sort(listP);
+		Collections.sort(listP, new ComparatorPibHabitant ());
+		
+		afficher (listP);
+		
+Collections.sort(listP, new ComparatorHabitant ());
 		
 		afficher (listP);
 		
 	}
-
-	/* (non-Javadoc)
-	 * @see java.lang.Comparable#compareTo(java.lang.Object)
-	 */
-	
-	@Override
-	public int compareTo(Pays pays)
-	{
-		if (pays.pibHab < pibHab)
-			return 1;
-		else if (pays.pibHab > pibHab)
-			return -1;
-		return 0;
-	}
-	
-	/*
-	@Override
-	public int compareTo(Pays pays)
-	{
-		// TODO Auto-generated method stub
-		return nomPays.compareTo(pays.nomPays);
-	} */
 
 }
