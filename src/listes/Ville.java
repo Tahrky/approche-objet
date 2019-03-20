@@ -3,10 +3,6 @@
  */
 package listes;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 /**
  *
  * @author BIRABEN-BIANCHI Hugo
@@ -25,6 +21,13 @@ public class Ville
 		this.nbHabitant = nbHabitant;
 	}
 
+	public String toString ()
+	{
+		return (nomVille + ", " + nbHabitant + " hab.");
+	}
+	
+	// GETTERS & SETTERS
+	
 	public String nomVille (int nb)
 	{
 		if (nb == nbHabitant)
@@ -52,10 +55,4 @@ public class Ville
 	{
 		this.nbHabitant = nbHabitant;
 	}
-
-	public String toString ()
-	{
-		return (nomVille + ", " + nbHabitant + " hab.");
-	}
-	
 }

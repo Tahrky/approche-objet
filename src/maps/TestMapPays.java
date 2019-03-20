@@ -9,7 +9,6 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-import listes.Ville;
 import sets.Pays;
 
 /**

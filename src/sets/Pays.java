@@ -3,7 +3,6 @@
  */
 package sets;
 
-import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -17,8 +16,7 @@ public class Pays
 	private int nbHabitant;
 	private double pibHab;
 	
-	public Pays ()
-	{}
+	public Pays () {}
 	
 	public Pays(String nomPays, int nbHabitant, double pibHab)
 	{
@@ -57,6 +55,8 @@ public class Pays
 		System.out.println("--- FIN DE LISTE ---");
 	}
 
+	// GETTERS & SETTERS
+	
 	public String getNomPays()
 	{
 		return nomPays;

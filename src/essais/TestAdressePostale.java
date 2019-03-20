@@ -4,6 +4,7 @@ import entites.AdressePostale;
 
 public class TestAdressePostale 
 {
+	@SuppressWarnings("unused")
 	public static void main(String[] args) 
 	{
 		AdressePostale adresse1 = new AdressePostale (5, "Rue des lilas", 84000, "Avignon");
