@@ -6,8 +6,6 @@ package sets;
 import java.util.HashSet;
 import java.util.Set;
 
-import listes.Ville;
-
 /**
  *
  * @author BIRABEN-BIANCHI Hugo
@@ -15,13 +13,22 @@ import listes.Ville;
 public class Pays
 {
 
+	public static Set <Pays> setP = new HashSet <> ();
+	public String nomPays;
+	public int nbHabitant;
+	public double pibHab;
 	
-	String nomPays;
-	int nbHabitant;
-	double pibHab;
-	
-	public Pays()
+	public Pays ()
 	{
+		setP.add(new Pays("USA", 327167434, 55805.204 ));
+		setP.add(new Pays("France", 67795000, 38476.7));
+		setP.add(new Pays("Allemagne", 82979100, 47589.972));
+		setP.add(new Pays("UK", 65105246, 43770.688));
+		setP.add(new Pays("Italie", 60483973, 29866));
+		setP.add(new Pays("Japon", 126168156, 39058.5));
+		setP.add(new Pays("Chine", 1417913092, 7989.72));
+		setP.add(new Pays("Russie", 146880400, 11099.20));
+		setP.add(new Pays("Inde", 1296834042, 1626.982));
 	}
 	
 	public Pays(String nomPays, int nbHabitant, double pibHab)
@@ -66,17 +73,6 @@ public class Pays
 	 */
 	public static void main(String[] args)
 	{
-		Set <Pays> setP = new HashSet <> ();
-		// TODO Auto-generated method stub
-		setP.add(new Pays("USA", 327167434, 55805.204 ));
-		setP.add(new Pays("France", 67795000, 38476.7));
-		setP.add(new Pays("Allemagne", 82979100, 47589.972));
-		setP.add(new Pays("UK", 65105246, 43770.688));
-		setP.add(new Pays("Italie", 60483973, 29866));
-		setP.add(new Pays("Japon", 126168156, 39058.5));
-		setP.add(new Pays("Chine", 1417913092, 7989.72));
-		setP.add(new Pays("Russie", 146880400, 11099.20));
-		setP.add(new Pays("Inde", 1296834042, 1626.982));
 		
 		int max = 0;
 		for (Pays pays : setP)
