@@ -8,14 +8,44 @@ import java.util.List;
  *
  * @author BIRABEN-BIANCHI Hugo
  */
-public class Pays implements Comparable<Pays>
+public class Pays
 {
 
 	public static List <Pays> listP = new ArrayList <> ();
-	public String nomPays;
-	public int nbHabitant;
-	public double pibHab;
+	private String nomPays;
+	private int nbHabitant;
+	private double pibHab;
 	
+	public String getNomPays()
+	{
+		return nomPays;
+	}
+
+	public void setNomPays(String nomPays)
+	{
+		this.nomPays = nomPays;
+	}
+
+	public int getNbHabitant()
+	{
+		return nbHabitant;
+	}
+
+	public void setNbHabitant(int nbHabitant)
+	{
+		this.nbHabitant = nbHabitant;
+	}
+
+	public double getPibHab()
+	{
+		return pibHab;
+	}
+
+	public void setPibHab(double pibHab)
+	{
+		this.pibHab = pibHab;
+	}
+
 	public Pays ()
 	{}
 	
@@ -77,10 +107,9 @@ public class Pays implements Comparable<Pays>
 		
 		afficher (listP);
 		
-Collections.sort(listP, new ComparatorHabitant ());
+		Collections.sort(listP, new ComparatorHabitant ());
 		
 		afficher (listP);
 		
 	}
-
 }

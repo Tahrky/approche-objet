@@ -18,9 +18,9 @@ public class ComparatorHabitant implements Comparator<Pays>
 	@Override
 	public int compare(Pays arg0, Pays arg1)
 	{
-		if (arg1.nbHabitant < arg0.nbHabitant)
+		if (arg1.getNbHabitant () < arg0.getNbHabitant ())
 			return 1;
-		else if (arg1.nbHabitant > arg0.nbHabitant)
+		else if (arg1.getNbHabitant () > arg0.getNbHabitant ())
 			return -1;
 		return 0;
 	}
