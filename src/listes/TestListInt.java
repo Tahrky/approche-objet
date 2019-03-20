@@ -15,6 +15,8 @@ public class TestListInt
 {
 
 	private static List <Integer> listInt = new ArrayList <Integer> ();
+	// Autre notations possibles
+	// private static List <Integer> listInt = Arrays.asList (new Integer [] {-1, 5, 7, 3, -2, 4, 8, 5};
 	
 	public static void afficheListe ()
 	{
@@ -55,9 +57,11 @@ public class TestListInt
 			if (it.next () == min)
 				it.remove();
 		
+		///*
 		for (int i = 0; i < listInt.size (); i++)
 			if (listInt.get(i) < 0)
-				listInt.set(i, listInt.get(i)*-1);
+				listInt.set(i, listInt.get(i)*-1); 
+		//*/
 				
 		
 		afficheListe ();
